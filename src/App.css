@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0
+}
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+.Cabechita {
+
+  font-family: Lato;
+  color: #001a70;
+  background-color: #eda108;
+  display: flex;
+
+  ;
+
+}
+
+.textograndecartas {
+  font-family: Lato;
+  color: #001a70;
+  text-align: center;
+
+
+}
+
+.light {
+  font-weight: lighter;
+}
+
+.textograndecartas>div {
+  font-weight: lighter;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+
+}
+
+.imagencientifico {
+  background-image: url("../public/assets/hombreconmicroscopio.jpg");
+  width: 100%;
+  height: 500px;
+  background-size: 100% 100%;
+
+  
+}
+
+#divcientifico > button:hover{
+  background-color: #001A70;
+  cursor: pointer;;
+}
+#divvacio{
+  width: 100%;
+  height: 250px;
+}
+#divcientifico{
+  font-family: Lato;
+  color: #001a70;
+  max-width: 600px;
+  max-height: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  padding: 50px;
+  background-color: rgba(250, 235, 215, 0.493);
+  button{
+    background-color: #FFB71B; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
+}
+.noticias >div>button:hover{
+  background-color: #001A70;
+  cursor: pointer;
+  
+}
+.cartasportafolio {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  text-align: center;
+  font-family: Lato;
+  color: #001a70;
+  div{
+    img{
+      -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+    }
+  }
+
+}
+
+.cartasportafolio > div:hover{
+  box-shadow: 2px 2px 2px 2px gray;
+  img{
+    cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+  }
+}
+
+
+.imagenesproductos{
+  padding-top: 100px;
+
+
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+.imagenesproductos > div > img:hover{
+  cursor: pointer;
+}
+#produc1{
+  text-align: right;
+}
+
+.imagenesproductos > div > img{
+  width: 555px;
+  height: 380px;
+  
+}
+.textoproductos{
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 85px;
+  div{
+    font-family: Lato ;
+    font-size: large  ;
+
+    padding: 5px;
+    text-align: center;
+
+    background-color: #eda108;
+    border-radius: 25px;
+  }
+}
+.imagenespublicaciones{
+  width: 60%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  padding-top: 50px;
+  margin: auto;
+
+}
+.imageneslogos{
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.imageneslogos > div > img {
+  width: 167px;
+  height: 100px;
+}
+.imagenespublicaciones > div > img{
+  width: 250px;
+  height: 250px;
+  margin-top: 50px;
+  
+}
+.imagenespublicaciones > div > img:hover{
+  filter: brightness(50%);
+  cursor: pointer;
+
+}
+.todonav{
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 16px;
+}
+.textopublicaciones{
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 85px;
+  div{
+    font-family: Lato ;
+    font-size: large  ;
+
+    padding: 5px;
+    text-align: center;
+
+    background-color: #eda108;
+    border-radius: 25px;
+  }
+}
+.noticias{
+  display: flex;
+  justify-content: center;
+  font-family: Lato;
+  color: #001A70;
+  text-align: center;
+  font-size: larger;
+  margin-top: 20px;
+  div{
+    padding: 20px;
+    
+  }
+  
+}
+.noticias > div > button{
+background-color: #FFB71B; /* Green */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+}
+#ntc1 {
+  background-image: url("../public/assets/infeccionescirales.jpg");
+  width: 360px;
+  height: 360px;
+  background-size: 100% 100%;
+  margin: auto;
+  padding: 0;
+  div{
+    background-color: #001a7085;
+    padding: 10px;
+    color: white;
+    
+  }
+}
+#ntc2 {
+  background-image: url("../public/assets/bacterias.jpg");
+  width: 360px;
+  height: 360px;
+  background-size: 100% 100%;
+  margin: auto;
+  padding: 0;
+  div{
+    background-color: #001a7085;
+    padding: 10px;
+    color: white;
+    
+  }
+}
+#ntc3 {
+  background-image: url("../public/assets/prevencioncovid.jpg");
+  width: 360px;
+  height: 360px;
+  background-size: 100% 100%;
+  margin: auto;
+  padding: 0;
+  div{
+    background-color: #001a7085;
+    padding: 10px;
+    color: white;
+    
+  }
+}
+.noticias > div > img{
+  width: 360px;
+  height: 360px;
+}
+.cartasportafolio>div {
+  padding: 25px;
+
+  img {
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  border-radius: 5%;
+  margin: 40px;
+}
+
+#pimg1 {
+  background-color: #D9EBEE;
+}
+
+#pimg2 {
+  background-color: #F7E3D4;
+}
+
+#pimg3 {
+  background-color: #DCD1DE;
+}
+
+#pimg4 {
+  background-color: #F5E3EC;
+}
+
+#pimg5 {
+  background-color: #E1EFD7;
+}
+
+.Cabechita>div>div>img {
+
+  width: 15px;
+  background-color: #ffe58f;
+  height: 15px;
+  filter: invert(1);
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 7px;
+
+}
+
+.Cabechita>div {
+
+
+
+  width: 100%;
+  text-align: center;
+  align-content: center;
+
+}
+
+.Cabechita>div>p {
+  margin-top: 12px;
+  padding: 0;
+
+
+}
+
+
+.Buscar {
+  align-items: center;
+  display: flex;
+
+
+
+  text-align: center;
+  margin: 10px;
+}
+
+
+
+.Cabechita>div>div>input {
+
+  padding: 7px;
+
+
+
+  width: 320px;
+
+  box-sizing: border-box;
+
+}
+
+.Lupa {
+  background-color: #001a70;
+  width: 30px;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.imagengrande {
+  align-content: center;
+  text-align: center;
+  background-color: #fcb900;
+}
+
+.imagengrande>img {
+  max-width: 80%;
+
+}
+
+.imagensante{
+  margin-left: 390px;
+  img{
+    height: 34px;
+    width: 172px;
+  }
+  
+  
+}
+a:hover {
+  background-color: #001A70;;
+  color: white;
+}
+a{
+  font-weight: bold;
+  color: #001A70;
+  text-decoration: none;
+  padding: 10px;
+  margin: 19px;
+  font-family: Lato;
+  margin-left: 20px;
+}
+.dropbtn:hover{
+  background-color: #001A70;
+  color: white;
+  font-weight: bold;
+}
+.dropbtn {
+  font-weight: bold;
+  color: #001A70;
+  padding: 16px;
+  background-color: white;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color:#494c4f;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(162, 55, 55, 0.2);
+
+  z-index: 1;
+
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #2d2929e8;
+color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.footer{
+ display: flex;
+  align-items: center;
+  background-color: #252f61;
+  color: white;
+  font-family: Lato;
+}
+.iconsSocial{
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  margin-right: 10px;
+}
+.img-footer{
+  margin-left: 50px;
+
+  margin-right: 50px;
+  img{
+    width: 150px;
+    height: 50px;
+    padding: 70px;
+  }
+}
+.iconsSocial img{
+  display: flex;
+
+  width: 100%;
+  height :100%;
+  object-fit: cover;
+  
+}
+.iconFace {
+  width: 15px;
+  background-color: #ffe58f;
+  height: 15px;
+  filter: invert(1);
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 7px;
+}
+.iconInsta {
+  width: 15px;
+  background-color: #ffe58f;
+  height: 15px;
+  filter: invert(1);
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 7px;
+}
+.subs-footer{
+  width: auto;
+  align-items: center;
+  font-size: 30px;
+  input{
+    padding: 10px;
+    width: 400px;
+  }
+  button{
+    background-color: #FFB71B; /* Green */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 10px;
+  }
+}
+.text{
+  font-size: 20px;
+}
+#wea{
+  display: flex;
+
+}
+
+.buttonSubs{
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: #f7a015;
+  border-radius: 2px;
+  color:black;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonSubs:hover{
+  
+  background-color: #e0e967;
+  color: #F7A015;
+}
+.redes{
+  margin-left: 100px;
+  font-size: 20px;
+
+}
